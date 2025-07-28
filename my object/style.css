@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+
+* {
+ margin: 0;
+ padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "poppins", serif;
+}
+
+
+body {
+    background-color: #222831;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 0 0.5rem;
+    max-width: 1200px;
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+.navigation a:hover {
+    color: #44c44a;
+}
+
+hr{
+    opacity: 10%;
+}
+
+.hero {
+   
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+    direction: rtl;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    width: 30%;
+    height: 30%;
+}
+#heros {
+
+    background-image: linear-gradient(red, blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+.heroyou {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #eeeeee;
+}
+
+.title {
+
+    font-size: 1.5rem;
+    color: #dddddd;
+}
+
+
+.start {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+    direction: rtl;
+    background-color: rgba(255, 255, 255, 0.795);
+    color: #181818;
+    border-radius: 24px;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.photo {
+    width: 5%;
+    height: auto;
+    border-radius: 100%;
+}
+.mute { 
+
+   
+    justify-content:space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+    direction: ltr;
+    background-color: rgb(77, 76, 76);
+    color: #ffffff;
+    border-radius: 24px;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    width: 60%;
+    height: 60%;
+}
+.ph{
+     display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 0 0.5rem;
+    max-width: 1200px;
+    direction: ltr;
+  
+}
+
+.navi li {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+.hit {
+    display: flex;
+    justify-content:space-between;
+    margin: 5rem auto;
+    text-align: center;
+    max-width: 1200px;
+    direction:rtl;
+    color: #eeeeee;
+    text-decoration: none;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.open {
+    background-image: linear-gradient(rgb(26, 255, 0) , rgb(255, 0, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin: 5rem auto;
+    max-width: 1200px;
+    direction: ltr;
+    width: 28%;
+    height: 28%;
+   
+}
+
+@media (max-width:1023px) {
+header {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.start {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.mute {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+    .open {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .photo {
+        width: 20%;
+    }
+    .hero, .start, .mute, .open {
+        width: 80%;
+        height: auto;
+    }
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation a {
+        padding: 0.5rem 0;
+    }
+    .navigation {
+        width: 100%;
+        text-align: center;
+    }
+    .hit {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hit h1 {
+        font-size: 2rem;
+    }
+    .hit p {
+        font-size: 1.2rem;
+    }
+    .heroyou {
+        align-items: center;
+    }
+    .name {
+        font-size: 1.5rem;
+    }
+    .title {
+        font-size: 1.2rem;
+    }
+    .ph {
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        
+    }
+    .navi li {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navi li a {
+        padding: 0.5rem 0;
+    }
+    .navi {
+        width: 100%;
+        text-align: center;
+    }
+
+    .photo {
+        width: 30%;
+    }
+
+}
